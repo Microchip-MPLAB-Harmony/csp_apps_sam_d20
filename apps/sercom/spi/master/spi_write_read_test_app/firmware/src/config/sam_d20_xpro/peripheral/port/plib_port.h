@@ -65,45 +65,41 @@
 // *****************************************************************************
 // *****************************************************************************
 
-  
 /*** Macros for APP_SLAVE_BUSY_PIN pin ***/
 #define APP_SLAVE_BUSY_PIN_Set()               (PORT_REGS->GROUP[1].PORT_OUTSET = 1 << 14)
 #define APP_SLAVE_BUSY_PIN_Clear()             (PORT_REGS->GROUP[1].PORT_OUTCLR = 1 << 14)
 #define APP_SLAVE_BUSY_PIN_Toggle()            (PORT_REGS->GROUP[1].PORT_OUTTGL = 1 << 14)
-#define APP_SLAVE_BUSY_PIN_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 14)) & 0x01)
 #define APP_SLAVE_BUSY_PIN_OutputEnable()      (PORT_REGS->GROUP[1].PORT_DIRSET = 1 << 14)
 #define APP_SLAVE_BUSY_PIN_InputEnable()       (PORT_REGS->GROUP[1].PORT_DIRCLR = 1 << 14)
+#define APP_SLAVE_BUSY_PIN_Get()               (((PORT_REGS->GROUP[1].PORT_IN >> 14)) & 0x01)
 #define APP_SLAVE_BUSY_PIN_PIN                  PORT_PIN_PB14
 
 /*** Macros for LED pin ***/
 #define LED_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 14)
 #define LED_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 14)
 #define LED_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 14)
-#define LED_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 14)) & 0x01)
 #define LED_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 14)
 #define LED_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 14)
+#define LED_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 14)) & 0x01)
 #define LED_PIN                  PORT_PIN_PA14
 
 /*** Macros for SWITCH pin ***/
 #define SWITCH_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 15)
 #define SWITCH_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 15)
 #define SWITCH_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 15)
-#define SWITCH_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 15)) & 0x01)
 #define SWITCH_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 15)
 #define SWITCH_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 15)
+#define SWITCH_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 15)) & 0x01)
 #define SWITCH_PIN                  PORT_PIN_PA15
 
 /*** Macros for APP_SLAVE_CS pin ***/
 #define APP_SLAVE_CS_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = 1 << 17)
 #define APP_SLAVE_CS_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = 1 << 17)
 #define APP_SLAVE_CS_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = 1 << 17)
-#define APP_SLAVE_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 17)) & 0x01)
 #define APP_SLAVE_CS_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = 1 << 17)
 #define APP_SLAVE_CS_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = 1 << 17)
+#define APP_SLAVE_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 17)) & 0x01)
 #define APP_SLAVE_CS_PIN                  PORT_PIN_PA17
-
-
-
 // *****************************************************************************
 /* PORT Group
 
@@ -913,7 +909,7 @@ void PORT_GroupToggle(PORT_GROUP group, uint32_t mask);
     void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as input.
+    Configures the selected IO pins of a group as input.
 
   Description:
     This function configures the selected IO pins of a group as input. The pins
@@ -952,7 +948,7 @@ void PORT_GroupInputEnable(PORT_GROUP group, uint32_t mask);
     void PORT_GroupOutputEnable(PORT_GROUP group, uint32_t mask)
 
   Summary:
-    Confgiures the selected IO pins of a group as output.
+    Configures the selected IO pins of a group as output.
 
   Description:
     This function configures the selected IO pins of a group as output. The pins
