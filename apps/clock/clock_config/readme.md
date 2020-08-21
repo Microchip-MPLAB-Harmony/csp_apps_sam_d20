@@ -43,9 +43,9 @@ The following table shows the target hardware for the application projects.
 2. Observe a clock of 4 MHz on the clock output pin
 3. LED should be blinking continuosly
 
-Refer to the following table for clock output pin and LED name for different boards:
+Refer to the following table for clock output pin and LED name:
 
 | Board      | Clock output pin | LED Name |
 | ---------- | ---------------- |--------- |
-| [SAM D11 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/atsamd11-xpro)    | PB15 (Pin 10 of the EXT2 header)  | LED0 |
+| [SAM D20 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/ATSAMD20-XPRO)   | PB15 (Pin 10 of the EXT2 header)  | LED0 |
 ||||
