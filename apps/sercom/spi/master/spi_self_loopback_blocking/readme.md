@@ -14,7 +14,7 @@ To download or clone this application from Github, go to the [top level of the r
 
 ![clone](../../../../docs/images/clone.png)
 
-Path of the application within the repository is **apps/sercom/spi/spi_self_loopback_blocking/firmware** .
+Path of the application within the repository is **apps/sercom/spi/master/spi_self_loopback_blocking/firmware** .
 
 To build the application, refer to the following table and open the project using its IDE.
 
@@ -48,6 +48,6 @@ The following table shows the target hardware for the application projects.
 Following table provides the LED name:
 
 | Board      | LED Name |
-| ---------- | ---------------- |--------- |
+| ---------- | ---------------- |
 | [SAM D20 Xplained Pro Evaluation Kit](https://www.microchip.com/developmenttools/ProductDetails/ATSAMD20-XPRO) | LED0 |
 |||
