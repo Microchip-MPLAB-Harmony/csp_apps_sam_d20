@@ -40,6 +40,7 @@
 
 #include "plib_clock.h"
 #include "device.h"
+#include "interrupts.h"
 
 static void SYSCTRL_Initialize(void)
 {
@@ -64,13 +65,24 @@ static void DFLL_Initialize(void)
     uint16_t calibFine = (uint16_t)(((*(uint32_t*)0x806028)) & 0x3ff);
 
     SYSCTRL_REGS->SYSCTRL_DFLLVAL = SYSCTRL_DFLLVAL_COARSE(calibCoarse) | SYSCTRL_DFLLVAL_FINE(calibFine);
-
-    /* Configure DFLL    */
-    SYSCTRL_REGS->SYSCTRL_DFLLCTRL = SYSCTRL_DFLLCTRL_ENABLE_Msk ;
+    GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_GEN(0x1)  | GCLK_CLKCTRL_CLKEN_Msk | GCLK_CLKCTRL_ID(0);
+    while((SYSCTRL_REGS->SYSCTRL_PCLKSR & SYSCTRL_PCLKSR_DFLLRDY_Msk) != SYSCTRL_PCLKSR_DFLLRDY_Msk)
+    {
+        /* Waiting for the Ready state */
+    }
+    SYSCTRL_REGS->SYSCTRL_DFLLMUL = SYSCTRL_DFLLMUL_MUL(1464) | SYSCTRL_DFLLMUL_FSTEP(1) | SYSCTRL_DFLLMUL_CSTEP(1);
 
     while((SYSCTRL_REGS->SYSCTRL_PCLKSR & SYSCTRL_PCLKSR_DFLLRDY_Msk) != SYSCTRL_PCLKSR_DFLLRDY_Msk)
     {
-        /* Waiting for DFLL to be ready */
+        /* Waiting for the Ready state */
+    }
+
+    /* Configure DFLL    */
+    SYSCTRL_REGS->SYSCTRL_DFLLCTRL = SYSCTRL_DFLLCTRL_ENABLE_Msk | SYSCTRL_DFLLCTRL_MODE_Msk ;
+
+    while((SYSCTRL_REGS->SYSCTRL_PCLKSR & SYSCTRL_PCLKSR_DFLLLCKF_Msk) != SYSCTRL_PCLKSR_DFLLLCKF_Msk)
+    {
+        /* Waiting for DFLL to fully lock to meet clock accuracy */
     }
 
 }
@@ -103,8 +115,8 @@ void CLOCK_Initialize (void)
     /* Function to Initialize the Oscillators */
     SYSCTRL_Initialize();
 
-    DFLL_Initialize();
     GCLK1_Initialize();
+    DFLL_Initialize();
     GCLK0_Initialize();
 
 
