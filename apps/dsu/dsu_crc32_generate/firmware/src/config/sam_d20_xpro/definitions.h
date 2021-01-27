@@ -64,6 +64,9 @@ extern "C" {
 #endif
 // DOM-IGNORE-END
 
+/* CPU clock frequency */
+#define CPU_CLOCK_FREQUENCY 191784
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: System Functions
