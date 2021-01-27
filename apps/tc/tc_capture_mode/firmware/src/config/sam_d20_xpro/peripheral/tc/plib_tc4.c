@@ -54,6 +54,7 @@
 */
 
 #include "plib_tc4.h"
+#include "interrupts.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -120,7 +121,7 @@ void TC4_CaptureStop( void )
 
 uint32_t TC4_CaptureFrequencyGet( void )
 {
-    return (uint32_t)(47972352UL);
+    return (uint32_t)(48000000UL);
 }
 
 void TC4_CaptureCommandSet(TC_COMMAND command)

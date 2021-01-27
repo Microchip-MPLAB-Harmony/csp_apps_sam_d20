@@ -54,6 +54,7 @@
 */
 
 #include "plib_tc3.h"
+#include "interrupts.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -119,7 +120,7 @@ void TC3_CompareStop( void )
 
 uint32_t TC3_CompareFrequencyGet( void )
 {
-    return (uint32_t)(47972352UL);
+    return (uint32_t)(48000000UL);
 }
 
 void TC3_CompareCommandSet(TC_COMMAND command)
