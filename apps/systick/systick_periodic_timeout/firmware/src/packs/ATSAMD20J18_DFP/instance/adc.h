@@ -1,5 +1,5 @@
 /**
- * \brief Component description for PTC
+ * \brief Instance header file for ATSAMD20J18
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -21,19 +21,15 @@
  */
 
 /* file generated from device description version 2019-11-25T06:48:59Z */
-#ifndef _SAMD20_PTC_COMPONENT_H_
-#define _SAMD20_PTC_COMPONENT_H_
-
-/* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR PTC                                          */
-/* ************************************************************************** */
-
-/** \brief PTC register offsets definitions */
-
-#if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief No register API structure defined for PTC */
-typedef void Ptc;
+#ifndef _SAMD20_ADC_INSTANCE_
+#define _SAMD20_ADC_INSTANCE_
 
 
-#endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _SAMD20_PTC_COMPONENT_H_ */
+/* ========== Instance Parameter definitions for ADC peripheral ========== */
+#define ADC_EXTCHANNEL_MSB                       _UL_(19)   /* Number of external channels */
+#define ADC_GCLK_ID                              _UL_(23)   /* Index of Generic Clock */
+#define ADC_RESULT_BITS                          _UL_(16)   /* Size of RESULT.RESULT bitfield */
+#define ADC_RESULT_MSB                           _UL_(15)   /* Size of Result */
+#define ADC_INSTANCE_ID                          _UL_(80)   
+
+#endif /* _SAMD20_ADC_INSTANCE_ */

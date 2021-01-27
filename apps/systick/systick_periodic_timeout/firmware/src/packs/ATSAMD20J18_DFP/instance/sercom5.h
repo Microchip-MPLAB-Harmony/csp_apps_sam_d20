@@ -1,5 +1,5 @@
 /**
- * \brief Component description for PTC
+ * \brief Instance header file for ATSAMD20J18
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -21,19 +21,15 @@
  */
 
 /* file generated from device description version 2019-11-25T06:48:59Z */
-#ifndef _SAMD20_PTC_COMPONENT_H_
-#define _SAMD20_PTC_COMPONENT_H_
-
-/* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR PTC                                          */
-/* ************************************************************************** */
-
-/** \brief PTC register offsets definitions */
-
-#if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief No register API structure defined for PTC */
-typedef void Ptc;
+#ifndef _SAMD20_SERCOM5_INSTANCE_
+#define _SAMD20_SERCOM5_INSTANCE_
 
 
-#endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _SAMD20_PTC_COMPONENT_H_ */
+/* ========== Instance Parameter definitions for SERCOM5 peripheral ========== */
+#define SERCOM5_GCLK_ID_CORE                     _UL_(18)   
+#define SERCOM5_GCLK_ID_SLOW                     _UL_(12)   
+#define SERCOM5_INT_MSB                          _UL_(3)    
+#define SERCOM5_PMSB                             _UL_(3)    
+#define SERCOM5_INSTANCE_ID                      _UL_(71)   
+
+#endif /* _SAMD20_SERCOM5_INSTANCE_ */

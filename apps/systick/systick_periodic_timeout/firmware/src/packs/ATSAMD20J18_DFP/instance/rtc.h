@@ -1,5 +1,5 @@
 /**
- * \brief Component description for PTC
+ * \brief Instance header file for ATSAMD20J18
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -21,19 +21,18 @@
  */
 
 /* file generated from device description version 2019-11-25T06:48:59Z */
-#ifndef _SAMD20_PTC_COMPONENT_H_
-#define _SAMD20_PTC_COMPONENT_H_
-
-/* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR PTC                                          */
-/* ************************************************************************** */
-
-/** \brief PTC register offsets definitions */
-
-#if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief No register API structure defined for PTC */
-typedef void Ptc;
+#ifndef _SAMD20_RTC_INSTANCE_
+#define _SAMD20_RTC_INSTANCE_
 
 
-#endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _SAMD20_PTC_COMPONENT_H_ */
+/* ========== Instance Parameter definitions for RTC peripheral ========== */
+#define RTC_ALARM_NUM                            _UL_(1)    /* Number of Alarms */
+#define RTC_COMP16_NUM                           _UL_(2)    /* Number of 16-bit Comparators */
+#define RTC_COMP32_NUM                           _UL_(1)    /* Number of 32-bit Comparators */
+#define RTC_GCLK_ID                              _UL_(2)    /* Index of Generic Clock */
+#define RTC_NUM_OF_ALARMS                        _UL_(1)    /* Number of Alarms (obsolete) */
+#define RTC_NUM_OF_COMP16                        _UL_(2)    /* Number of 16-bit Comparators (obsolete) */
+#define RTC_NUM_OF_COMP32                        _UL_(1)    /* Number of 32-bit Comparators (obsolete) */
+#define RTC_INSTANCE_ID                          _UL_(5)    
+
+#endif /* _SAMD20_RTC_INSTANCE_ */

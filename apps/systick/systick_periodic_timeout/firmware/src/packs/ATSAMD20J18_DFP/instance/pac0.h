@@ -1,5 +1,5 @@
 /**
- * \brief Component description for PTC
+ * \brief Instance header file for ATSAMD20J18
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -21,19 +21,12 @@
  */
 
 /* file generated from device description version 2019-11-25T06:48:59Z */
-#ifndef _SAMD20_PTC_COMPONENT_H_
-#define _SAMD20_PTC_COMPONENT_H_
-
-/* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR PTC                                          */
-/* ************************************************************************** */
-
-/** \brief PTC register offsets definitions */
-
-#if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief No register API structure defined for PTC */
-typedef void Ptc;
+#ifndef _SAMD20_PAC0_INSTANCE_
+#define _SAMD20_PAC0_INSTANCE_
 
 
-#endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _SAMD20_PTC_COMPONENT_H_ */
+/* ========== Instance Parameter definitions for PAC0 peripheral ========== */
+#define PAC0_WPROT_DEFAULT_VAL                   _UL_(0x00000000) /* PAC protection mask at reset */
+#define PAC0_INSTANCE_ID                         _UL_(0)    
+
+#endif /* _SAMD20_PAC0_INSTANCE_ */

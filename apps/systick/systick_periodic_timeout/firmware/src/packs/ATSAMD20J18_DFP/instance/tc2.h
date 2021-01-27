@@ -1,5 +1,5 @@
 /**
- * \brief Component description for PTC
+ * \brief Instance header file for ATSAMD20J18
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -21,19 +21,20 @@
  */
 
 /* file generated from device description version 2019-11-25T06:48:59Z */
-#ifndef _SAMD20_PTC_COMPONENT_H_
-#define _SAMD20_PTC_COMPONENT_H_
-
-/* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR PTC                                          */
-/* ************************************************************************** */
-
-/** \brief PTC register offsets definitions */
-
-#if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief No register API structure defined for PTC */
-typedef void Ptc;
+#ifndef _SAMD20_TC2_INSTANCE_
+#define _SAMD20_TC2_INSTANCE_
 
 
-#endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _SAMD20_PTC_COMPONENT_H_ */
+/* ========== Instance Parameter definitions for TC2 peripheral ========== */
+#define TC2_CC8_NUM                              _UL_(2)    
+#define TC2_CC16_NUM                             _UL_(2)    
+#define TC2_CC32_NUM                             _UL_(2)    
+#define TC2_DITHERING_EXT                        _UL_(0)    
+#define TC2_GCLK_ID                              _UL_(20)   
+#define TC2_MASTER                               _UL_(1)    
+#define TC2_OW_NUM                               _UL_(2)    
+#define TC2_PERIOD_EXT                           _UL_(0)    
+#define TC2_SHADOW_EXT                           _UL_(0)    
+#define TC2_INSTANCE_ID                          _UL_(74)   
+
+#endif /* _SAMD20_TC2_INSTANCE_ */

@@ -1,5 +1,5 @@
 /**
- * \brief Component description for PTC
+ * \brief Instance header file for ATSAMD20J18
  *
  * Copyright (c) 2021 Microchip Technology Inc. and its subsidiaries.
  *
@@ -21,19 +21,16 @@
  */
 
 /* file generated from device description version 2019-11-25T06:48:59Z */
-#ifndef _SAMD20_PTC_COMPONENT_H_
-#define _SAMD20_PTC_COMPONENT_H_
-
-/* ************************************************************************** */
-/*   SOFTWARE API DEFINITION FOR PTC                                          */
-/* ************************************************************************** */
-
-/** \brief PTC register offsets definitions */
-
-#if !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__))
-/** \brief No register API structure defined for PTC */
-typedef void Ptc;
+#ifndef _SAMD20_AC_INSTANCE_
+#define _SAMD20_AC_INSTANCE_
 
 
-#endif /* !(defined(__ASSEMBLER__) || defined(__IAR_SYSTEMS_ASM__)) */
-#endif /* _SAMD20_PTC_COMPONENT_H_ */
+/* ========== Instance Parameter definitions for AC peripheral ========== */
+#define AC_CMP_NUM                               _UL_(2)    /* Number of comparators */
+#define AC_GCLK_ID_ANA                           _UL_(25)   /* Index of Generic Clock for analog */
+#define AC_GCLK_ID_DIG                           _UL_(24)   /* Index of Generic Clock for digital */
+#define AC_NUM_CMP                               _UL_(2)    
+#define AC_PAIRS                                 _UL_(1)    /* Number of pairs of comparators */
+#define AC_INSTANCE_ID                           _UL_(81)   
+
+#endif /* _SAMD20_AC_INSTANCE_ */
