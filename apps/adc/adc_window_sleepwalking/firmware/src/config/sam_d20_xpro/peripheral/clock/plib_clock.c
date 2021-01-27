@@ -40,10 +40,18 @@
 
 #include "plib_clock.h"
 #include "device.h"
+#include "interrupts.h"
 
 static void SYSCTRL_Initialize(void)
 {
 
+    /* Configure 8MHz Oscillator */
+    SYSCTRL_REGS->SYSCTRL_OSC8M = (SYSCTRL_REGS->SYSCTRL_OSC8M & (SYSCTRL_OSC8M_CALIB_Msk | SYSCTRL_OSC8M_FRANGE_Msk)) | SYSCTRL_OSC8M_ENABLE_Msk | SYSCTRL_OSC8M_PRESC(0x0) | SYSCTRL_OSC8M_RUNSTDBY_Msk ;
+
+    while((SYSCTRL_REGS->SYSCTRL_PCLKSR & SYSCTRL_PCLKSR_OSC8MRDY_Msk) != SYSCTRL_PCLKSR_OSC8MRDY_Msk)
+    {
+        /* Waiting for the OSC8M Ready state */
+    }
 
     SYSCTRL_REGS->SYSCTRL_OSC32K = 0x0;
 }
@@ -64,13 +72,24 @@ static void DFLL_Initialize(void)
     uint16_t calibFine = (uint16_t)(((*(uint32_t*)0x806028)) & 0x3ff);
 
     SYSCTRL_REGS->SYSCTRL_DFLLVAL = SYSCTRL_DFLLVAL_COARSE(calibCoarse) | SYSCTRL_DFLLVAL_FINE(calibFine);
-
-    /* Configure DFLL    */
-    SYSCTRL_REGS->SYSCTRL_DFLLCTRL = SYSCTRL_DFLLCTRL_ENABLE_Msk | SYSCTRL_DFLLCTRL_RUNSTDBY_Msk ;
+    GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_GEN(0x1)  | GCLK_CLKCTRL_CLKEN_Msk | GCLK_CLKCTRL_ID(0);
+    while((SYSCTRL_REGS->SYSCTRL_PCLKSR & SYSCTRL_PCLKSR_DFLLRDY_Msk) != SYSCTRL_PCLKSR_DFLLRDY_Msk)
+    {
+        /* Waiting for the Ready state */
+    }
+    SYSCTRL_REGS->SYSCTRL_DFLLMUL = SYSCTRL_DFLLMUL_MUL(46875) | SYSCTRL_DFLLMUL_FSTEP(1) | SYSCTRL_DFLLMUL_CSTEP(1);
 
     while((SYSCTRL_REGS->SYSCTRL_PCLKSR & SYSCTRL_PCLKSR_DFLLRDY_Msk) != SYSCTRL_PCLKSR_DFLLRDY_Msk)
     {
-        /* Waiting for DFLL to be ready */
+        /* Waiting for the Ready state */
+    }
+
+    /* Configure DFLL    */
+    SYSCTRL_REGS->SYSCTRL_DFLLCTRL = SYSCTRL_DFLLCTRL_ENABLE_Msk | SYSCTRL_DFLLCTRL_MODE_Msk ;
+
+    while((SYSCTRL_REGS->SYSCTRL_PCLKSR & SYSCTRL_PCLKSR_DFLLLCKF_Msk) != SYSCTRL_PCLKSR_DFLLLCKF_Msk)
+    {
+        /* Waiting for DFLL to fully lock to meet clock accuracy */
     }
 
 }
@@ -99,24 +118,36 @@ static void GCLK1_Initialize(void)
     }
 }
 
+
+static void GCLK2_Initialize(void)
+{
+    GCLK_REGS->GCLK_GENCTRL = GCLK_GENCTRL_SRC(6) | GCLK_GENCTRL_RUNSTDBY_Msk | GCLK_GENCTRL_GENEN_Msk | GCLK_GENCTRL_ID(2);
+
+    while((GCLK_REGS->GCLK_STATUS & GCLK_STATUS_SYNCBUSY_Msk) == GCLK_STATUS_SYNCBUSY_Msk)
+    {
+        /* wait for the Generator 2 synchronization */
+    }
+}
+
 void CLOCK_Initialize (void)
 {
     /* Function to Initialize the Oscillators */
     SYSCTRL_Initialize();
 
-    DFLL_Initialize();
     GCLK1_Initialize();
+    GCLK2_Initialize();
+    DFLL_Initialize();
     GCLK0_Initialize();
 
 
     /* Selection of the Generator and write Lock for RTC */
     GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_ID(2) | GCLK_CLKCTRL_GEN(0x1)  | GCLK_CLKCTRL_CLKEN_Msk;
     /* Selection of the Generator and write Lock for EVSYS_0 */
-    GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_ID(4) | GCLK_CLKCTRL_GEN(0x0)  | GCLK_CLKCTRL_CLKEN_Msk;
+    GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_ID(4) | GCLK_CLKCTRL_GEN(0x2)  | GCLK_CLKCTRL_CLKEN_Msk;
     /* Selection of the Generator and write Lock for SERCOM3_CORE */
-    GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_ID(16) | GCLK_CLKCTRL_GEN(0x0)  | GCLK_CLKCTRL_CLKEN_Msk;
+    GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_ID(16) | GCLK_CLKCTRL_GEN(0x2)  | GCLK_CLKCTRL_CLKEN_Msk;
     /* Selection of the Generator and write Lock for ADC */
-    GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_ID(23) | GCLK_CLKCTRL_GEN(0x0)  | GCLK_CLKCTRL_CLKEN_Msk;
+    GCLK_REGS->GCLK_CLKCTRL = GCLK_CLKCTRL_ID(23) | GCLK_CLKCTRL_GEN(0x2)  | GCLK_CLKCTRL_CLKEN_Msk;
 
     /* Configure the AHB Bridge Clocks */
     PM_REGS->PM_AHBMASK = 0x1f;
@@ -129,6 +160,4 @@ void CLOCK_Initialize (void)
     /* Configure the APBC Bridge Clocks */
     PM_REGS->PM_APBCMASK = 0x10022;
 
-    /*Disable RC oscillator*/
-    SYSCTRL_REGS->SYSCTRL_OSC8M = 0x0;
 }
