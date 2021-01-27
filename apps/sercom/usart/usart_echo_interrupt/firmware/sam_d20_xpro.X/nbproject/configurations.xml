@@ -7,19 +7,22 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_d20_xpro" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f4" displayName="clock" projectFiles="true">
+            <logicalFolder name="f1" displayName="clock" projectFiles="true">
               <itemPath>../src/config/sam_d20_xpro/peripheral/clock/plib_clock.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="nvic" projectFiles="true">
+            <logicalFolder name="f6" displayName="evsys" projectFiles="true">
+              <itemPath>../src/config/sam_d20_xpro/peripheral/evsys/plib_evsys.h</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/sam_d20_xpro/peripheral/nvic/plib_nvic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="nvmctrl" projectFiles="true">
+            <logicalFolder name="f3" displayName="nvmctrl" projectFiles="true">
               <itemPath>../src/config/sam_d20_xpro/peripheral/nvmctrl/plib_nvmctrl.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="port" projectFiles="true">
+            <logicalFolder name="f4" displayName="port" projectFiles="true">
               <itemPath>../src/config/sam_d20_xpro/peripheral/port/plib_port.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="sercom" projectFiles="true">
+            <logicalFolder name="f5" displayName="sercom" projectFiles="true">
               <logicalFolder name="f1" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/sam_d20_xpro/peripheral/sercom/usart/plib_sercom3_usart.h</itemPath>
                 <itemPath>../src/config/sam_d20_xpro/peripheral/sercom/usart/plib_sercom_usart_common.h</itemPath>
@@ -30,6 +33,8 @@
           <itemPath>../src/config/sam_d20_xpro/toolchain_specifics.h</itemPath>
           <itemPath>../src/config/sam_d20_xpro/definitions.h</itemPath>
           <itemPath>../src/config/sam_d20_xpro/device.h</itemPath>
+          <itemPath>../src/config/sam_d20_xpro/interrupts.h</itemPath>
+          <itemPath>../src/config/sam_d20_xpro/device_vectors.h</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f2" displayName="packs" projectFiles="true">
@@ -53,10 +58,43 @@
             <itemPath>../src/packs/ATSAMD20J18_DFP/component/tc.h</itemPath>
             <itemPath>../src/packs/ATSAMD20J18_DFP/component/wdt.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="f3" displayName="instance" projectFiles="true">
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/ac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/adc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/dac.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/dsu.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/eic.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/evsys.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/gclk.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/nvmctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/pac0.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/pac1.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/pac2.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/pm.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/port.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/ptc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/rtc.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/sercom0.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/sercom1.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/sercom2.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/sercom3.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/sercom4.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/sercom5.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/sysctrl.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc0.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc1.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc2.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc3.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc4.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc5.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc6.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc7.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/wdt.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f2" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMD20J18_DFP/pio/samd20j18.h</itemPath>
           </logicalFolder>
-          <itemPath>../src/packs/ATSAMD20J18_DFP/atsamd20j18.h</itemPath>
+          <itemPath>../src/packs/ATSAMD20J18_DFP/samd20j18.h</itemPath>
         </logicalFolder>
         <logicalFolder name="f2" displayName="CMSIS" projectFiles="true">
           <logicalFolder name="f1" displayName="CMSIS" projectFiles="true">
@@ -81,9 +119,19 @@
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
                    projectFiles="true">
+      <logicalFolder name="f1" displayName="sam_d20_xpro.mhc" projectFiles="true">
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/cmsis.yml</itemPath>
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/core.yml</itemPath>
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/dfp.yml</itemPath>
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/evsys.yml</itemPath>
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/GraphSettings.yml</itemPath>
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/nvmctrl.yml</itemPath>
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/project.yml</itemPath>
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/sercom3.yml</itemPath>
+        <itemPath>../src/config/sam_d20_xpro/sam_d20_xpro.mhc/settings.yml</itemPath>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
-      <itemPath>../src/config/sam_d20_xpro/harmony.prj</itemPath>
-      <itemPath>../../../../../../../mhc/../csp_apps_sam_d20/apps/sercom/usart/usart_echo_interrupt/firmware/src/config/sam_d20_xpro/sam_d20_xpro.xml</itemPath>
+      <itemPath>../src/config/sam_d20_xpro/harmony-manifest-success.yml</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -100,19 +148,22 @@
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="sam_d20_xpro" projectFiles="true">
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f4" displayName="clock" projectFiles="true">
+            <logicalFolder name="f1" displayName="clock" projectFiles="true">
               <itemPath>../src/config/sam_d20_xpro/peripheral/clock/plib_clock.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f5" displayName="nvic" projectFiles="true">
+            <logicalFolder name="f6" displayName="evsys" projectFiles="true">
+              <itemPath>../src/config/sam_d20_xpro/peripheral/evsys/plib_evsys.c</itemPath>
+            </logicalFolder>
+            <logicalFolder name="f2" displayName="nvic" projectFiles="true">
               <itemPath>../src/config/sam_d20_xpro/peripheral/nvic/plib_nvic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="nvmctrl" projectFiles="true">
+            <logicalFolder name="f3" displayName="nvmctrl" projectFiles="true">
               <itemPath>../src/config/sam_d20_xpro/peripheral/nvmctrl/plib_nvmctrl.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="port" projectFiles="true">
+            <logicalFolder name="f4" displayName="port" projectFiles="true">
               <itemPath>../src/config/sam_d20_xpro/peripheral/port/plib_port.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="sercom" projectFiles="true">
+            <logicalFolder name="f5" displayName="sercom" projectFiles="true">
               <logicalFolder name="f1" displayName="usart" projectFiles="true">
                 <itemPath>../src/config/sam_d20_xpro/peripheral/sercom/usart/plib_sercom3_usart.c</itemPath>
               </logicalFolder>
@@ -144,11 +195,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.41</languageToolchainVersion>
+        <languageToolchainVersion>2.50</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMD20_DFP" vendor="Microchip" version="3.3.56"/>
+        <pack name="SAMD20_DFP" vendor="Microchip" version="3.4.66"/>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
       </packs>
       <ScriptingSettings>
@@ -170,6 +221,7 @@
       </compileType>
       <makeCustomizationType>
         <makeCustomizationPreStepEnabled>false</makeCustomizationPreStepEnabled>
+        <makeUseCleanTarget>false</makeUseCleanTarget>
         <makeCustomizationPreStep></makeCustomizationPreStep>
         <makeCustomizationPostStepEnabled>false</makeCustomizationPostStepEnabled>
         <makeCustomizationPostStep></makeCustomizationPostStep>
@@ -350,6 +402,7 @@
         <property key="firmware.toolpack"
                   value="Press to select which tool pack to use"/>
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
+        <property key="freeze.timers" value="false"/>
         <property key="lastid" value=""/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
@@ -364,7 +417,10 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-3ffff"/>
+        <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="D:/harmony/csp_apps_sam_d20/apps/sercom/usart/usart_echo_interrupt/firmware/sam_d20_xpro.X/debug/sam_d20_xpro/sam_d20_xpro_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"
@@ -375,6 +431,7 @@
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="script.has_reset" value="true"/>
         <property key="script.log_level" value="0"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
@@ -383,6 +440,7 @@
         <property key="toolpack.updateoptions.packversion"
                   value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value=""/>
+        <property key="x.erase.clearprot" value="true"/>
       </EdbgTool>
       <PICkit3PlatformTool>
         <property key="ADC 1" value="true"/>
