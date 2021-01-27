@@ -40,6 +40,7 @@
 
 #include "plib_clock.h"
 #include "device.h"
+#include "interrupts.h"
 
 static void SYSCTRL_Initialize(void)
 {
@@ -73,6 +74,10 @@ static void DFLL_Initialize(void)
     uint16_t calibFine = (uint16_t)(((*(uint32_t*)0x806028)) & 0x3ff);
 
     SYSCTRL_REGS->SYSCTRL_DFLLVAL = SYSCTRL_DFLLVAL_COARSE(calibCoarse) | SYSCTRL_DFLLVAL_FINE(calibFine);
+    while((SYSCTRL_REGS->SYSCTRL_PCLKSR & SYSCTRL_PCLKSR_DFLLRDY_Msk) != SYSCTRL_PCLKSR_DFLLRDY_Msk)
+    {
+        /* Waiting for the Ready state */
+    }
 
     /* Configure DFLL    */
     SYSCTRL_REGS->SYSCTRL_DFLLCTRL = SYSCTRL_DFLLCTRL_ENABLE_Msk ;
@@ -101,6 +106,7 @@ static void GCLK1_Initialize(void)
 {
     GCLK_REGS->GCLK_GENCTRL = GCLK_GENCTRL_SRC(5) | GCLK_GENCTRL_GENEN_Msk | GCLK_GENCTRL_ID(1);
 
+    GCLK_REGS->GCLK_GENDIV = GCLK_GENDIV_DIV(250) | GCLK_GENDIV_ID(1);
     while((GCLK_REGS->GCLK_STATUS & GCLK_STATUS_SYNCBUSY_Msk) == GCLK_STATUS_SYNCBUSY_Msk)
     {
         /* wait for the Generator 1 synchronization */
