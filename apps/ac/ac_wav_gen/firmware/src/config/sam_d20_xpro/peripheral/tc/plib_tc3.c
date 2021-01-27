@@ -54,6 +54,7 @@
 */
 
 #include "plib_tc3.h"
+#include "interrupts.h"
 
 
 // *****************************************************************************
@@ -124,7 +125,7 @@ void TC3_TimerStop( void )
 
 uint32_t TC3_TimerFrequencyGet( void )
 {
-    return (uint32_t)(47972352UL);
+    return (uint32_t)(48000000UL);
 }
 
 void TC3_TimerCommandSet(TC_COMMAND command)
