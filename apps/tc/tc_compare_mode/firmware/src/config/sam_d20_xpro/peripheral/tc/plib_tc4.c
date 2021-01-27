@@ -54,6 +54,7 @@
 */
 
 #include "plib_tc4.h"
+#include "interrupts.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -119,7 +120,7 @@ void TC4_CompareStop( void )
 
 uint32_t TC4_CompareFrequencyGet( void )
 {
-    return (uint32_t)(749568UL);
+    return (uint32_t)(750000UL);
 }
 
 void TC4_CompareCommandSet(TC_COMMAND command)

@@ -54,6 +54,7 @@
 */
 
 #include "plib_tc6.h"
+#include "interrupts.h"
 
 // *****************************************************************************
 // *****************************************************************************
@@ -118,7 +119,7 @@ void TC6_CompareStop( void )
 
 uint32_t TC6_CompareFrequencyGet( void )
 {
-    return (uint32_t)(749568UL);
+    return (uint32_t)(750000UL);
 }
 
 void TC6_CompareCommandSet(TC_COMMAND command)
