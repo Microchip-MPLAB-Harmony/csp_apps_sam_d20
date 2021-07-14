@@ -181,7 +181,7 @@
       </toolsSet>
       <packs>
         <pack name="CMSIS" vendor="ARM" version="5.4.0"/>
-        <pack name="SAMD20_DFP" vendor="Microchip" version="3.4.66"/>
+        <pack name="SAMD20_DFP" vendor="Microchip" version="3.4.68"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
