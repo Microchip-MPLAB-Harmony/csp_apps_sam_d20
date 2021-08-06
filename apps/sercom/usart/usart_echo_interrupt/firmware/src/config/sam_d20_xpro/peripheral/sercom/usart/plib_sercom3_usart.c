@@ -171,7 +171,7 @@ bool SERCOM3_USART_SerialSetup( USART_SERIAL_SETUP * serialSetup, uint32_t clkFr
 
         if(clkFrequency >= (16U * serialSetup->baudRate))
         {
-            baudValue = 65536U - ((uint32_t)((uint64_t)65536U * 16U * serialSetup->baudRate) / clkFrequency);
+            baudValue = 65536U - (uint32_t)(((uint64_t)65536U * 16U * serialSetup->baudRate) / clkFrequency);
         }
 
         if(baudValue != 0U)
