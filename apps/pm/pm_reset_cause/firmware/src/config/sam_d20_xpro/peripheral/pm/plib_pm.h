@@ -58,7 +58,6 @@
 
 #include <stdbool.h>
 #include <stddef.h>
-#include "atsamd20j18.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus // Provide C++ Compatibility
