@@ -55,7 +55,7 @@
 // *****************************************************************************
 // *****************************************************************************
 
-#define SYSTICK_FREQ   47972352U
+#define SYSTICK_FREQ   8000000U
 
 #define SYSTICK_INTERRUPT_PERIOD_IN_US  (100000U)
 
@@ -77,6 +77,8 @@ uint32_t SYSTICK_TimerPeriodGet ( void );
 uint32_t SYSTICK_TimerCounterGet ( void );
 uint32_t SYSTICK_TimerFrequencyGet ( void );
 void SYSTICK_DelayMs ( uint32_t delay_ms );
+void SYSTICK_DelayUs ( uint32_t delay_us );
+
 void SYSTICK_TimerCallbackSet ( SYSTICK_CALLBACK callback, uintptr_t context );
 #ifdef __cplusplus // Provide C++ Compatibility
  }
