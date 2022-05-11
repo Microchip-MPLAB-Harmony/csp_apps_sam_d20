@@ -478,7 +478,7 @@ children:
       - type: String
         attributes: {id: source}
         children:
-        - {type: Value, value: 'D:/harmony/dev_packs/Microchip/SAMD20_DFP/3.4.68/samd20/xc32/ATSAMD20J18/ATSAMD20J18.ld'}
+        - {type: Value, value: 'C:/h3/dev_packs/Microchip/SAMD20_DFP/3.6.112/samd20/xc32/ATSAMD20J18/ATSAMD20J18.ld'}
   - type: Boolean
     attributes: {id: NVIC_-1_0_ENABLE}
     children:
