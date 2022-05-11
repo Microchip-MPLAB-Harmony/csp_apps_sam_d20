@@ -57,6 +57,7 @@
             <itemPath>../src/packs/ATSAMD20J18_DFP/component/sysctrl.h</itemPath>
             <itemPath>../src/packs/ATSAMD20J18_DFP/component/tc.h</itemPath>
             <itemPath>../src/packs/ATSAMD20J18_DFP/component/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/component/fuses.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f2" displayName="instance" projectFiles="true">
             <itemPath>../src/packs/ATSAMD20J18_DFP/instance/ac.h</itemPath>
@@ -90,6 +91,7 @@
             <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc6.h</itemPath>
             <itemPath>../src/packs/ATSAMD20J18_DFP/instance/tc7.h</itemPath>
             <itemPath>../src/packs/ATSAMD20J18_DFP/instance/wdt.h</itemPath>
+            <itemPath>../src/packs/ATSAMD20J18_DFP/instance/fuses.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f3" displayName="pio" projectFiles="true">
             <itemPath>../src/packs/ATSAMD20J18_DFP/pio/samd20j18.h</itemPath>
@@ -133,6 +135,7 @@
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_d20_xpro/harmony-manifest-success.yml</itemPath>
       <itemPath>i2c_eeprom_emulation_sam_d20_xpro.mc3</itemPath>
+      <itemPath>../src/config/sam_d20_xpro/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -194,13 +197,13 @@
         <targetDevice>ATSAMD20J18</targetDevice>
         <targetHeader></targetHeader>
         <targetPluginBoard></targetPluginBoard>
-        <platformTool>noID</platformTool>
+        <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>3.01</languageToolchainVersion>
+        <languageToolchainVersion>4.10</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAMD20_DFP" vendor="Microchip" version="3.4.68"/>
+        <pack name="SAMD20_DFP" vendor="Microchip" version="3.5.96"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -262,7 +265,7 @@
         <property key="enable-unroll-loops" value="false"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_d20_xpro;../src/packs/ATSAMD20J18_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
+                  value="../src;../src/config/sam_d20_xpro;../src/packs/ATSAMD20J18_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -361,7 +364,7 @@
         <property key="exceptions" value="true"/>
         <property key="exclude-floating-point" value="false"/>
         <property key="extra-include-directories"
-                  value="../src;../src/config/sam_d20_xpro;../src/packs/ATSAMD20J18_DFP;../src/packs/CMSIS/CMSIS/Core/Include;../src/packs/CMSIS/"/>
+                  value="../src;../src/config/sam_d20_xpro;../src/packs/ATSAMD20J18_DFP;../src/packs/CMSIS/;../src/packs/CMSIS/CMSIS/Core/Include"/>
         <property key="generate-16-bit-code" value="false"/>
         <property key="generate-micro-compressed-code" value="false"/>
         <property key="isolate-each-function" value="true"/>
@@ -394,9 +397,13 @@
       </C32Global>
       <EdbgTool>
         <property key="AutoSelectMemRanges" value="auto"/>
+        <property key="arm.use_vtor" value="false"/>
+        <property key="arm.vtor_adr" value="exception_table"/>
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="firmware.path"
                   value="Press to browse for a specific firmware version"/>
@@ -404,6 +411,8 @@
                   value="Press to select which tool pack to use"/>
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
         <property key="freeze.timers" value="false"/>
+        <property key="lastid" value=""/>
+        <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -417,7 +426,6 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-3ffff"/>
-        <property key="memories.rww" value="true"/>
         <property key="poweroptions.powerenable" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
@@ -429,11 +437,16 @@
         <property key="programoptions.preserveprogramrange" value="false"/>
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
+        <property key="script.has_reset" value="true"/>
+        <property key="script.log_level" value="1"/>
+        <property key="script.reset_delay" value="0"/>
+        <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
                   value="toolpack.updateoptions.uselatestoolpack"/>
         <property key="toolpack.updateoptions.packversion"
                   value="Press to select which tool pack to use"/>
         <property key="voltagevalue" value=""/>
+        <property key="x.erase.clearprot" value="true"/>
       </EdbgTool>
       <PICkit3PlatformTool>
         <property key="ADC 1" value="true"/>
@@ -928,6 +941,8 @@
         <property key="communication.activationmode" value="nohv"/>
         <property key="communication.interface" value="swd"/>
         <property key="communication.speed" value="2.000"/>
+        <property key="debugoptions.debug-startup" value="Use system settings"/>
+        <property key="debugoptions.reset-behaviour" value="Use system settings"/>
         <property key="debugoptions.useswbreakpoints" value="false"/>
         <property key="firmware.path"
                   value="Press to browse for a specific firmware version"/>
@@ -936,6 +951,7 @@
         <property key="firmware.update.action" value="firmware.update.use.latest"/>
         <property key="freeze.timers" value="false"/>
         <property key="lastid" value=""/>
+        <property key="loader.board_file" value="${ProjectDir}/board.xboard"/>
         <property key="memories.aux" value="false"/>
         <property key="memories.bootflash" value="true"/>
         <property key="memories.configurationmemory" value="true"/>
@@ -962,7 +978,7 @@
         <property key="programoptions.preserveuserid" value="false"/>
         <property key="programoptions.programuserotp" value="false"/>
         <property key="script.has_reset" value="true"/>
-        <property key="script.log_level" value="0"/>
+        <property key="script.log_level" value="1"/>
         <property key="script.reset_delay" value="0"/>
         <property key="script.show_output" value="false"/>
         <property key="toolpack.updateoptions"
