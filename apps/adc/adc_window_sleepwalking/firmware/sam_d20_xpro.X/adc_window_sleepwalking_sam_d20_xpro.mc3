@@ -1,4 +1,4 @@
-<config configName="sam_d20_xpro" projectName="adc_window_sleepwalking_sam_d20_xpro" configVersion="1.1" device="ATSAMD20J18" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.2.4">
+<config configName="sam_d20_xpro" projectName="adc_window_sleepwalking_sam_d20_xpro" configVersion="1.1" device="ATSAMD20J18" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -43,7 +43,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.0.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -2522,14 +2522,6 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>..\src\config\sam_d20_xpro\definitions.h</file>
-         <hash>113db661064e9d96384e0763830f1a460fdafb00245307de56f62fa93659d702</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\samd20j18.h</file>
-         <hash>5de3c61f052eece5f14edc76a2698b7f96e330fa95b8f35c5307bb9f21707631</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cachel1_armv7.h</file>
          <hash>6cdb5b324f2fd1bb5b2f47298ba6e6777e735d7cad3bb8d942cd36e2c6e65328</hash>
       </entry>
@@ -2538,16 +2530,8 @@
          <hash>81e813a093101d546799e00723cbf7245e2d18471fa51c8d130c5809cecca03e</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\tc6.h</file>
-         <hash>d9ba1b0961f47d0ec0641c96b769753c6fe1e97cc29da023f888820e8f71242b</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\dac.h</file>
-         <hash>465a713a93c8c7492dace2d1a0a90d585690f588bf80a88b1de31550ced739ce</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\tc4.h</file>
-         <hash>58a7035d3d570d15b3af4670d554851e0a96c9ec540c2219414328422bf1a21d</hash>
+         <hash>3dd33bfc6c4a78d84f2540b0d8d7aea139afb8cccf39e0713ff6340b7f01b8b9</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_gcc.h</file>
@@ -2555,63 +2539,231 @@
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\pm.h</file>
-         <hash>a34fd6f7072c6f82237af4feb13155230bf452b87cef8e8d3a4a84966549de64</hash>
+         <hash>79afa2578a6a9fe33d2f48947714a13698a669f47d706144c0157d9eeb97e4ea</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\port.h</file>
-         <hash>ea7c085636ec0083f7cbf0c452633d2802ee6e10d2221490971bc65257f64ef0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\sercom\usart\plib_sercom3_usart.c</file>
-         <hash>813b6a629c0036806823c5a5aa54bad857d0541b6c8e97865fac8a1cdaf1008e</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\sercom\usart\plib_sercom3_usart.h</file>
-         <hash>46501dc42d444fb6d1828a9091472de6cecdfcd528a2999588be48494c27d8ce</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\sercom\usart\plib_sercom_usart_common.h</file>
-         <hash>5f22a98af6f1aa745b41195472e69df58c460da55f7bca08e991dc9f8f04927d</hash>
+         <hash>cdee76d5ae093706063de85bf18fdfb1fa3c4f91421c4def17b1f5a71f023d0f</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\nvic\plib_nvic.c</file>
-         <hash>c174e9b5a96a94eeb8dd07aa3492127d0b73eeb4002bda7854f7349dc358d3ae</hash>
+         <hash>6721a8dfd3cb73e2db04b10d569423326a9f2d52c8e8872975ef1e64a454023e</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom4.h</file>
-         <hash>2058e0d6fc24e91483f853542391a483a02dc89b603daefc8d96d33fcae19c55</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom2.h</file>
-         <hash>1da69c86c95d46cc504be42c1a34dbf6220e4d2ad848a80196a59063abd7bb10</hash>
+         <hash>1733637641b5f1eed1904ad1435b4a151093627d0596a103c03852f862d02cbd</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\wdt.h</file>
-         <hash>4ec50851282aaca053342b143fb678deb0abd0b2fc8441d423e3790f1095548b</hash>
+         <hash>1ff149b6d30be0d51a015b7700f1ef85b6fa3169c1246944108803b9a85905f8</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom0.h</file>
-         <hash>33e8112a0f07fb6360aeaab0f78ba3cf70dd3d99a195026d2f17b573ec608c66</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\adc\plib_adc.h</file>
-         <hash>c36ae8f8f611fe8278bd36f075612a694412a66637def134f34195f306978a0d</hash>
+         <hash>5471314d5c687d893c6f0e729daf8f9505cdb2efd9ee48e30403b6a48f9194c0</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\nvmctrl\plib_nvmctrl.c</file>
-         <hash>ff7c3b733c56dbc0639140bd028256c08e6615c1507df667f2c20fa29dae9ee6</hash>
+         <hash>bdcdd09324aabfee99d83053fce34298dc5705207e02afee581b952bf60ffe6e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\device.h</file>
          <hash>befedb7992f5343119e04dcf150c9fb7fa9bc60ccb392cc9421855a5275de6f6</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\component\dsu.h</file>
-         <hash>161062ef98e8bc0dca0bf2ce6bc92663b9eb5f0143fd60cef010597e24dedb16</hash>
+         <file>..\src\config\sam_d20_xpro\peripheral\nvmctrl\plib_nvmctrl.h</file>
+         <hash>a10c9385ab1460929c8d9efdbd3ee8e491051546a6e08c5dbf7767300235ebcd</hash>
       </entry>
       <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\nvmctrl\plib_nvmctrl.h</file>
-         <hash>792fa6cae12cf2f543d756f79ca4ff2ea666f3a7c6cb300feba8314be47c4315</hash>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\fuses.h</file>
+         <hash>f711faff5b999e885dfce05a688e67909dec3c768a12a9e22cfcd1b9130bc580</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\libc_syscalls.c</file>
+         <hash>88bb2e34c939601b5b7ad076556e3ee0fcedf388436b8cddb6d6fd3e9d07472f</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\initialization.c</file>
+         <hash>57d4a80de2b918bfe78d1fa3a567177832d4f0179223c69984d7b5c5c9ed43d9</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm0plus.h</file>
+         <hash>a19e24c136145b4c72630d0ab7c83a7aef010f3ba165e34c56a05057a2d9fed5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\ac.h</file>
+         <hash>ea15f39053c27412791bc62392af8866a1ffbb4515a5b64780223561e1bcf2b3</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\eic.h</file>
+         <hash>e7fd5142316f8a510b674bfd50ad9fa03a9994476d89892ea1ec2b8cd9703cd6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\pac0.h</file>
+         <hash>c25018c3d3b7dae45aab3d36df12adbf7b90d16fb7803246887d81d243ded013</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\pio\samd20j18.h</file>
+         <hash>95741de7831172d956ac0f76bc8abc164ffe1d8a8e48130fd46294abb9531da0</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\tc3.h</file>
+         <hash>803808ac90394654ef5460cf2ea7c1477416ed8d9c86156e41887c4138028aee</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\pm\plib_pm.c</file>
+         <hash>d6228baaaf50d9aeb48e697581b64d200f50e460b1c619e69b9f4c634033666e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\pm\plib_pm.h</file>
+         <hash>2d49a34898e5d66af982f093b06b4fbd1a9b042e4ea367b81b5050725d2bb5a5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\adc\plib_adc_common.h</file>
+         <hash>df1428202cbb2e1366b8dd7487ef4432c2f53677ca22233043368c8c57686a24</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\evsys.h</file>
+         <hash>2914330f34f9bbae79c414dffe892680ca275bc9165c145cdb91d74c1982046d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\component\evsys.h</file>
+         <hash>54fcbdee5af54d7396876061ebd71c2ee3f869a69dc79fab9041e16e5f576e07</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\tc7.h</file>
+         <hash>e815b68a83b1331c3a75832404d790bfb15a9cbdf7f3502b8a8c68067bd41650</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
+         <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
+         <hash>d074534d7106cec83474b3b0a897bd2553e1a8895ecbd54f4f4fb25928066eee</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\rtc.h</file>
+         <hash>8cf11045666e3cd2808b901291c2df1b7af2767efd14a5841b8fdd0dd4f84034</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\interrupts.h</file>
+         <hash>cbf4df32231783feaec1605f8287ec8a2d99d74a8738193069f10b8be9f13c49</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\component\wdt.h</file>
+         <hash>3620810c6c54a3d785bebef494a1809a12b111d02bdd3691e77f6fe1d23c1953</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom3.h</file>
+         <hash>c44ee403fbc8c065e5b325dd309095fe1ac0ecf5743ef8baa6dc7489a1f7fe0e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\interrupts.c</file>
+         <hash>4e33c8cb5dcade808f436b1af68f1d535643066da18189348577ebbca5194ef5</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\rtc\plib_rtc.h</file>
+         <hash>7d962b342360094b5e027b0bb0c2015f3bc315ab8ad0dd36e156a8035d0c7b1d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
+         <hash>11b39b96ddc1125124762b3423a77b90dd40ea5b4582a3513830245046b24311</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\component\eic.h</file>
+         <hash>ff815edc53fd2c1184f467a795c6608ee851264e53080c212283a6cb04d62fe6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\component\adc.h</file>
+         <hash>977011c053ff289d43320e62985bd5b6cd0e4ba8e7e38e7947bbfd1c5bf30cb7</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\clock\plib_clock.h</file>
+         <hash>99bff84fe4a99e6423e2d28f881600300ece34a505bb89f3b4eb61154dbeeb10</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</file>
+         <hash>869640702d811c4c63abb52206715c891a93fd03be954df5ad40d378355af3d6</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\component\sercom.h</file>
+         <hash>360bf0bca8d2e477523eadbd35620f9479f11615395064135f9b85a5606638c6</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\clock\plib_clock.c</file>
+         <hash>eb78a006d482a6f9eeef75ffe27cbf97cb731fdc24317cb534312ded92676b43</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\component\nvmctrl.h</file>
+         <hash>a0c0e9da751f211808720ba94ae0de0a2d706980d4cbc190c83bc0859d764925</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\ptc.h</file>
+         <hash>5372c706542117db3e3e7e4bf1a9ad8a32559696d37d9db1718963c897b0b624</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\ATSAMD20J18.ld</file>
+         <hash>c33cc5c4b14c2223cff210edabed90f66346a45decbaf1953123b1ee4083a90e</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\device_vectors.h</file>
+         <hash>cde0a99a6aa326911ee9d936ce8b766d77080107accf2c405a4749eb1d77e5cb</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\pin_configurations.csv</file>
+         <hash>7e1284ab2da7afcdbb82e9dc08685e638b52fce798200bb5ed4d7aea555d9b68</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\tc2.h</file>
+         <hash>8d33ee5b858b4ab8507d374b685deff60fd23d3a01f84ba949e792b2dd61f921</hash>
+      </entry>
+      <entry>
+         <file>..\src\main.c</file>
+         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\pac1.h</file>
+         <hash>c3d68b5ea175f324b28b5764f9962e27b2420d6231c3bff8fdbed55c9fe227a7</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\definitions.h</file>
+         <hash>ad8d94b53f28216018d49992c5fe724414263b42d242e6ba765db48e79d2f80b</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\samd20j18.h</file>
+         <hash>70bafe3c2165b7ce23d8d9e81e576a7903d3d1410886fa79a1c5b4dd1848a82c</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\tc6.h</file>
+         <hash>c647f3bf28cc2ff3912384f7f3a930d39be5f2c6ff11a49cb609762faf714858</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\dac.h</file>
+         <hash>1c2274ba528b36c14864dd68bcde40b542459e1f9ce3bab5aa624cdce5ff970c</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\sercom\usart\plib_sercom3_usart.c</file>
+         <hash>1a9e93c13233cbebc3f237e8566806dfd630158884e48031216b91685adccab2</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\sercom\usart\plib_sercom3_usart.h</file>
+         <hash>38bd5f257a7dfce1144c3375178920ba13770e7ec6283d7e5014f8af56aeb1bc</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\sercom\usart\plib_sercom_usart_common.h</file>
+         <hash>63c6e89936ba47e8989478a8be0fa40b406361f2f0dcc1b6cfcd801b50a4bf92</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom2.h</file>
+         <hash>0e8fe5f180c1d7fee64a07eb605fdededfd18e3767ff0fcfce89eb37522cf395</hash>
+      </entry>
+      <entry>
+         <file>..\src\config\sam_d20_xpro\peripheral\adc\plib_adc.h</file>
+         <hash>c36ae8f8f611fe8278bd36f075612a694412a66637def134f34195f306978a0d</hash>
+      </entry>
+      <entry>
+         <file>..\src\packs\ATSAMD20J18_DFP\component\dsu.h</file>
+         <hash>194639c20e2f58f183db45334c71517b1123f98fe1fd4268b1401f8e2483199a</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_version.h</file>
@@ -2623,279 +2775,139 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\adc\plib_adc.c</file>
-         <hash>2599ce883da084ee84e4eef9e1f5bb097bddbd6d9cf4dd26a65e4179e752e434</hash>
+         <hash>c91ce5d822a75dae7e16ea272e4789ec799484fa3cb567957957b7831ce6da60</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\evsys\plib_evsys.c</file>
-         <hash>0f97b093047dbe13eb3f3fb5ea54496d1dbfabe261b5b20947fe04516887c1d4</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\libc_syscalls.c</file>
-         <hash>ff03e955db4f7bb775c7989bc2254553698f3d921e9885caac347ccd118e55d7</hash>
+         <hash>6eeed6c2882d16e7f672b904e51dfdbf3020c9ffe527e09487e413d5df714ace</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\toolchain_specifics.h</file>
-         <hash>9f3878bd7d87f09a39ebfe64a5df7d420b4a347f73303f442443a3afc9b9f43a</hash>
+         <hash>a4f1774c6f1f8c6cd522567536c9e9d75ca63259b868015ac9b0fb0aeeffe1f4</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\startup_xc32.c</file>
-         <hash>be2c779688c247443de3423ff9ffd8079d8e5afd090c46997829e1cf1d57c73f</hash>
+         <hash>e6227d89e36b74af1bc21e00e80b390502c97aaaa65796291f63b2d96cf0678e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\evsys\plib_evsys.h</file>
-         <hash>4a6a2aca81694724ff6b545a2b7742896a2968bda12eb8614e129154b9007d05</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\initialization.c</file>
-         <hash>e48d6b8badb8b2aa6f6a656d8dd628a136df751a7afe515ab62076d177b6ee64</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm0plus.h</file>
-         <hash>a19e24c136145b4c72630d0ab7c83a7aef010f3ba165e34c56a05057a2d9fed5</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\ac.h</file>
-         <hash>e7925e6fab9baa5b7109d82225b2f78cd60971f8c2973d1083cab9ec3de686d9</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\eic.h</file>
-         <hash>d02cba98f87873f59e8100c90ec8a5a2cfb444ebc09618dfd9755ce8b3b5ab8e</hash>
+         <hash>49852fa7ccb3dd52f06b6b2409fb8d197758703eeefc250fe86e13942e0626b4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\nvmctrl.h</file>
-         <hash>4063e0795de1faf9d52cdee92712244c0415f1733adb9ff7eea19496733a6147</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\pac0.h</file>
-         <hash>108a13e38efe01bf8a61755431646980c682383adda1070844106af57def979a</hash>
+         <hash>a5e9dc20abc2de5b6e088196bd490e3cca889f0440cd28574e4996522076974f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\gclk.h</file>
-         <hash>247b6eee679deed933ffa896f04e89131acc593507f81031cadd8a8b9b37ec5a</hash>
+         <hash>c11c7bdba9e84aee02479c2d0f51d5f60c47dc364fdcbd4d78752f3b268cd3ff</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\sysctrl.h</file>
-         <hash>bdf84400719f5ef837de4fa230dcad12bea4aaeb9d359de3bf9fd911aed5e9c4</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\pio\samd20j18.h</file>
-         <hash>b7f6b3e53600d093a908c2efa961b83c447d397301498b0235fd4df9d9577afa</hash>
+         <hash>ab292fdd191b21face8fd8a747c7e0b78a98c005a643af56bdf0a806046dab82</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\gclk.h</file>
-         <hash>1a1ec1bb499570a1e1554b5ccbae4ad0ed440df4b321259682ad6f0246393f6f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\tc3.h</file>
-         <hash>e11ee1b07fa6f62aabf311aef81e1913a2ef5a03878ab50721f156f156c53c3d</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\pm\plib_pm.c</file>
-         <hash>6942d3d0331921f2c0799cbb366d165b2e9101d5789e354bf8fd716749b5c3e5</hash>
+         <hash>dfcd421a916984ca5b5a9348ac7a658258b59ff94c3ac1f34f3fbd478b84e26f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\tc1.h</file>
-         <hash>96546699195d05eb961f8cf4b55ea7203cfebb2e82bafa88fad610b48f625145</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\pm\plib_pm.h</file>
-         <hash>6c8ca93afa2e00a0d0fdfbb6207aa4d69b9f2da50d444f9f6c30ba431ed091f0</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\adc\plib_adc_common.h</file>
-         <hash>51a081d3da9dc210235720c0f0f2e5c2d2145aa9cf5810dbecbb5777709d8258</hash>
+         <hash>eab1d607744de54b9947ed73cc1951b0f74e6476f1243b48692b0a2083c49a79</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang_ltm.h</file>
          <hash>8621969ea669a1b230ff2125a760ef66d575c48cb45e9e457f768909abcbda46</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\evsys.h</file>
-         <hash>48ee2a7c2071dfb26957307c379eaa2615164bdcc20b827b8b0dfb5feebe1572</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\pac2.h</file>
-         <hash>3d354da5f0287b83e740bb97a0a085769949341e1f55bfe16cdf6d8ef56ea002</hash>
+         <hash>6cb73eb334ca5739ba67260cf3507b8d93e9214ab3fdd17a9153d401a6e51658</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\adc.h</file>
-         <hash>fe816ea7733073e5dc3c9c37f359cf1bc8411a2dbf339ca474ecd5e7edd271b8</hash>
+         <hash>ce75caa8d9b37346e2b1e0e324ca8fb91bc408541f48dea7622ac93f8035c57f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\pac.h</file>
-         <hash>4696ee091bbb9ecdd8e87114217039606d4fe09faf51421f0abd9d91d82b94d9</hash>
+         <hash>83753810af197f371c64e8b5ea2a20b810da9b339d5afe4e59102c9d15a5e8dc</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\device_cache.h</file>
          <hash>e2914501b361bbc93a56d6915b1bf4fac00277e61f31fdee87a587bc15dea5b6</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\component\evsys.h</file>
-         <hash>9653eb731450114d695e9ca89f478b36da654ae7ea7d7cf41e129674efe52d3f</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\tc7.h</file>
-         <hash>b63f582032bdcb05877c5ab260053e3b77e871bde7c1b14a7ac01b1ce21cb85f</hash>
-      </entry>
-      <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\tc5.h</file>
-         <hash>35f376ada957b93051909c82a182ca10c25cb4ddc2a3feed5bafe928cd77000b</hash>
+         <hash>71e42f376f6090ce182d45c92631a7a9b561648c139edc60e475a4e6a23d5416</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\stdio\xc32_monitor.c</file>
-         <hash>395b4c696580d7479c18318e4462b7131da88c17713bbbefde82f957c463095d</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\mpu_armv7.h</file>
-         <hash>de1b5eb9ed566527b66dc06f4ecb6a43ab6800f7dac47e87c9cb42984dca41bb</hash>
+         <hash>09d37ac05bc55063350404f9ca3d5e26c415b893bf2c260503cd3b3e8de6894b</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\dsu.h</file>
-         <hash>ec84296dd967aa3cb9cb8acb020576a9f9b384a0a04cb9424be140225257b1b8</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armcc.h</file>
-         <hash>d074534d7106cec83474b3b0a897bd2553e1a8895ecbd54f4f4fb25928066eee</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\rtc.h</file>
-         <hash>60121e3b5891e61a2e39bcf0af134c88807aae3a3d1aa22bbf06bcce3f126e47</hash>
+         <hash>6d3430ab2a9ee0906b69fdb1e445e5550d4d13d771152580af928adfaf863ea2</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom5.h</file>
-         <hash>024259716df5d08845e4f0762b837631169ab153e8419a34582f8007f5046fdb</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\interrupts.h</file>
-         <hash>cbf4df32231783feaec1605f8287ec8a2d99d74a8738193069f10b8be9f13c49</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\component\wdt.h</file>
-         <hash>bde32917c0c2050cb4e312db4f82c8b17d61470ed647f5988f0681c21d424230</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom3.h</file>
-         <hash>7468b760b0f6d1e3f18aaf632a391f317c3d23ec3a4827e74eb8eb984f5f542b</hash>
+         <hash>00d520964bbd5af77c95462d0cc60796d51a01b6e30033dccf628d72eab03c94</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom1.h</file>
-         <hash>890c2200056bc8fcb89dc3b50eefa0fbc40963911b7fb9982413d226f0caabcf</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\interrupts.c</file>
-         <hash>d1d37219f61ce19897dc1b4d1273516584df6be8508a0197033ddd031b447923</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\rtc\plib_rtc.h</file>
-         <hash>767563a15b1d7a952680ff0fac2b87ba970f0d62cd9984ec92574e6b13ca4dba</hash>
+         <hash>c84db16b155d61d1668eef06144595eb596ed986d18c195baa0e1716381f8cc3</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\ac.h</file>
-         <hash>2a7964a2bb72f297a5725a38d268e9f2a9fe12e95320543eba530cddf2c63cf0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_armclang.h</file>
-         <hash>11b39b96ddc1125124762b3423a77b90dd40ea5b4582a3513830245046b24311</hash>
+         <hash>470554386ead6e765f9e6b564afc14cc30d06906239fdeb86e58bb66fdf1cef0</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\rtc\plib_rtc_timer.c</file>
-         <hash>f5da2680ff3beda83ee529680a8ed234e402a84628674cd71fbabb0d2171a640</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\component\eic.h</file>
-         <hash>73591ccd5462eaf6abb84b2b26ba8d73a84dd238de084c5aa55307a8b828537d</hash>
+         <hash>8ca8de5f2ecec9194d3f24ad36dba9f18936c0c6c6906f968c99a46a89a3fa19</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\ptc.h</file>
-         <hash>50f526efed56248459daae885ece378803592c46e220be9e2852996cde006da0</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\component\adc.h</file>
-         <hash>22789e14ee64e866e698d16492b2cb04f7c237d4288ef9cf1556919af31db905</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\clock\plib_clock.h</file>
-         <hash>99bff84fe4a99e6423e2d28f881600300ece34a505bb89f3b4eb61154dbeeb10</hash>
+         <hash>b8cdba5edeb3443f267cfc8e8da6da5c98ee12175aa48d2578fbceff110a4c46</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\dac.h</file>
-         <hash>8a202fd74b7f1632ef7808a3c7917e5bb9473a6ace627fd44fab49fe9f151458</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\CMSIS\CMSIS\Core\Include\cmsis_compiler.h</file>
-         <hash>869640702d811c4c63abb52206715c891a93fd03be954df5ad40d378355af3d6</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\component\sercom.h</file>
-         <hash>88a5f26d5f3b195e1d71a1ea2bed00ed00485608731830e20b1cd968dd850261</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\peripheral\clock\plib_clock.c</file>
-         <hash>0116244d3fae8e7ef89f46582d3d87d63a6d9ee540c6ae8d4a3177d93e8aa1b9</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\component\nvmctrl.h</file>
-         <hash>2bf37c57eb67cb6ddc7a77ae834c6859ccdf1a4f0d239c1381e611cc27db3a83</hash>
+         <hash>b4486c21e7c407f0296aaaef543941a8aa88c8beeffe6747337ea6eaf9951b2f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\sysctrl.h</file>
-         <hash>0a740b2523a774d774bc1986937dee09286bb666c63f120a2cc6e5129d855c52</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\ptc.h</file>
-         <hash>f071e34ec38705fa20b93c4caecfea6a233cc27026497e761f0374b4bc306640</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\ATSAMD20J18.ld</file>
-         <hash>a697fb1849cdd5ddd5816de1e06000443a55196ad764a5a39b455a3a7e25681e</hash>
-      </entry>
-      <entry>
-         <file>..\src\config\sam_d20_xpro\device_vectors.h</file>
-         <hash>2b2e82afb0db1cb01e6c01f840b12aeb1986d42224061181132f14964c68ebcf</hash>
+         <hash>64e87e8ca477d673a7befab31e8d442702a1b0888b0eed81dac7d5058f06dca4</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\tc.h</file>
-         <hash>b40413a3877d56ce377eab29d3d242ee2b5c65c8ea5d1346276668fedb291531</hash>
+         <hash>3ac174b79521ab6f2c79c04bc4b85c51fc719a09bbb527090abceea698f4323f</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\port.h</file>
-         <hash>4512180db13f2966cd5e74e100bb235071e2829dd8d0b5e182cb295b8acc4a32</hash>
+         <hash>b03b7b8fca8d66b0985542b8193312999a867b592ff31863de778768e97eab81</hash>
       </entry>
       <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\tc2.h</file>
-         <hash>523fc2076da6a3f8045eca7a9cfb450233fe13e185958cd7c278ec8344bf808e</hash>
-      </entry>
-      <entry>
-         <file>..\src\main.c</file>
-         <hash>d3c233d419e6304bfacbafc18cc68c0f5c26e365f23b20ea40ccfac458f664c5</hash>
+         <file>..\src\packs\ATSAMD20J18_DFP\component\fuses.h</file>
+         <hash>94af2980cca8b1cda0f07820ac8119ec2b910768c848e21afe25654835a958d5</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\tc0.h</file>
-         <hash>56a1f4db2938a78a2ca16d3d10c0e38a182c569cd32d6eb5dafd3bfe642eff23</hash>
+         <hash>f68b8226bd884abb48c940c98239a6e7787e13753fb298e3bf9c9bc916eeffba</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\exceptions.c</file>
-         <hash>bfd108301928495d78fb40a7ff9ca1f0f1e82b2e3fbf62733a587a3159c48393</hash>
+         <hash>5efbe5a64a17c496d2f5b177bc9cd66a7f0f80323d9558e220c073a13570a2a7</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\port\plib_port.c</file>
-         <hash>6c140441bf3d65cdffecccf817e3fb0c191314aa452047f134e89f407d6ad8d2</hash>
+         <hash>d55ddc5df46bc23744131a03bb30d9698e9411d4a3ee49fcc963e19bd0471f2b</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\port\plib_port.h</file>
-         <hash>2eb35b31311c76cb413ae31cf43f0abd673743184e30e6df2d68695288f1b989</hash>
+         <hash>0012ac1ae2f64b66b179598bb6710c0f6ac3a09902cc15efc06cc3ebf319f488</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\rtc.h</file>
-         <hash>673a23ec54fdc9a68fe1a05156e190ad2a4f4c6cadb42e58eeed845c0555bca5</hash>
-      </entry>
-      <entry>
-         <file>..\src\packs\ATSAMD20J18_DFP\instance\pac1.h</file>
-         <hash>5acb447f6d9e6182125667f1b2d7463779f2ddd1ee280411885f4bc62944626c</hash>
+         <hash>e3d9042abede64edd9760bf7b163af5ac0b92dc8eb77e940ddec2a88151d8f75</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\pm.h</file>
-         <hash>f5af0a34a94ff28c67b91c2512ef1c1e53ed908bfef3ce2996ffbd735d1c38db</hash>
+         <hash>b17a964e0c9bd85659550fdd7a23189b082b53656771ab25bb0c0fe957536a63</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
