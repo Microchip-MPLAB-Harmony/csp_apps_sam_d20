@@ -66,9 +66,9 @@ enum
   STANDBY_SLEEP_MODE = 'b',
 }SLEEP_MODES;
 
-uint8_t cmd = 0;
+static uint8_t cmd = 0;
 
-void timeout (uintptr_t context)
+void timeout_handler (uintptr_t context)
 {
     LED_Toggle();
 }
@@ -94,7 +94,7 @@ int main ( void )
     /* Initialize all modules */
     SYS_Initialize ( NULL );
 
-    SYSTICK_TimerCallbackSet(&timeout, (uintptr_t) NULL);
+    SYSTICK_TimerCallbackSet(&timeout_handler, (uintptr_t) NULL);
     SYSTICK_TimerStart();
 
     printf("\n\n\r----------------------------------------------");
