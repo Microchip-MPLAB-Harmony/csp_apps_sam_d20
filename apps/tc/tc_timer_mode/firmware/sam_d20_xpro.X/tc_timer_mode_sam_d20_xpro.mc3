@@ -1,4 +1,4 @@
-<config configName="sam_d20_xpro" projectName="tc_timer_mode_sam_d20_xpro" configVersion="1.1" device="ATSAMD20J18" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.4.3">
+<config configName="sam_d20_xpro" projectName="tc_timer_mode_sam_d20_xpro" configVersion="1.1" device="ATSAMD20J18" deviceLibraryClass="com.microchip.mcc.harmony.Harmony3Library" coreVersion="5.5.0">
    <usedPackages class="java.util.ArrayList"/>
    <usedClasses class="java.util.TreeMap">
       <entry>
@@ -27,7 +27,7 @@
       </entry>
    </usedClasses>
    <usedLibraries class="java.util.ArrayList">
-      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.1.1"/>
+      <ILibraryFile class="com.microchip.mcc.core.library.BaseLibraryFile" libraryClass="com.microchip.mcc.harmony.Harmony3Library" version="1.3.1"/>
    </usedLibraries>
    <tokenMap class="java.util.TreeMap">
       <entry>
@@ -4021,7 +4021,7 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>..\src\config\sam_d20_xpro\definitions.h</file>
-         <hash>a6db29cceb1519fb8457d9c323453e6612032e3798e95f40b3c6cc4d85e0d2ca</hash>
+         <hash>8ee293134ea2c183c755bbd6c258cbd6edb25921668dd9208a7a7a65cf8bbc33</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\samd20j18.h</file>
@@ -4061,7 +4061,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\nvic\plib_nvic.c</file>
-         <hash>fcf05fbda0b8f034d80f3945bac83b64babb8d64315a39d6aaebe2ed1e788123</hash>
+         <hash>f16073955d1ffcc83e4e13fa8c44c200e994565082799f81cb23755d05862981</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\sercom4.h</file>
@@ -4081,7 +4081,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\nvmctrl\plib_nvmctrl.c</file>
-         <hash>6c9ddcb7ec64839add93ea8a9cd943432a114d11298e08c32f7e689d2329161a</hash>
+         <hash>bdcdd09324aabfee99d83053fce34298dc5705207e02afee581b952bf60ffe6e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\device.h</file>
@@ -4117,11 +4117,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\toolchain_specifics.h</file>
-         <hash>c93f9d68b1623668727be21b4449250a7e4a5d7040776d6f6d604a7528ffc9eb</hash>
+         <hash>a4f1774c6f1f8c6cd522567536c9e9d75ca63259b868015ac9b0fb0aeeffe1f4</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\startup_xc32.c</file>
-         <hash>d7ba451f4fffc267a5da6a83377b2b935a88cd73342f8a1f38ea8c39a86d963f</hash>
+         <hash>e6227d89e36b74af1bc21e00e80b390502c97aaaa65796291f63b2d96cf0678e</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\evsys\plib_evsys.h</file>
@@ -4129,7 +4129,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\initialization.c</file>
-         <hash>3e5d88ef2ded0ad3692b3070bcf98837bed10a49207e91638d4f7c025b2b883d</hash>
+         <hash>b03a5fc98f4a12be990cc2844f48ad44d4428f8fa162040f615c227e98de51a3</hash>
       </entry>
       <entry>
          <file>..\src\packs\CMSIS\CMSIS\Core\Include\core_cm0plus.h</file>
@@ -4257,11 +4257,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\interrupts.c</file>
-         <hash>0daa81c38b5c09dc703c0db186088dc7851777bd67ec82c5fc9b83ff1c4b0e1a</hash>
+         <hash>6e6be8979d9c870e22954633ebc159f92e13bbde695ebbf1e2511715d478a08a</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\tc\plib_tc3.c</file>
-         <hash>10ae5edbd13164a679f0f012b92f07b71220fc59ce482da303732532b8ae4952</hash>
+         <hash>e9049d1a0eb4d42c91857b43babccc73bd4f0022127dccf16ea7bab589226f04</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\ac.h</file>
@@ -4305,7 +4305,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\clock\plib_clock.c</file>
-         <hash>44bba9e99e9bc1d171d4328023a6cc4143e3b43ef818394caf2e43add97112c6</hash>
+         <hash>f38576e6d2f502b92ad3d8d92eb01ab2825fbd71e8a6930ac5f32f823c32154a</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\component\nvmctrl.h</file>
@@ -4341,7 +4341,7 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\pin_configurations.csv</file>
-         <hash>126ee7be82b942fec897e85cf4f05c84c0b16f40008460f12fce267c45b0ecd1</hash>
+         <hash>a75a03122fe02530b991cc15ec623f04091a92ce2351994223b646ad04121105</hash>
       </entry>
       <entry>
          <file>..\src\packs\ATSAMD20J18_DFP\instance\tc2.h</file>
@@ -4357,11 +4357,11 @@
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\exceptions.c</file>
-         <hash>b850253aacaae1bddfcb426c2dc11e0688900afffe9b22c60d0ab16298701118</hash>
+         <hash>5efbe5a64a17c496d2f5b177bc9cd66a7f0f80323d9558e220c073a13570a2a7</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\port\plib_port.c</file>
-         <hash>e8a3266804c8a67e377070cb223d8ac69d5f523d62189eb38f82ecaceee166e5</hash>
+         <hash>190f74a3522f12da99ef1cdd5453bee71b290dd44bc2ecb95d7315bd10204142</hash>
       </entry>
       <entry>
          <file>..\src\config\sam_d20_xpro\peripheral\port\plib_port.h</file>
