@@ -117,9 +117,19 @@
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles" displayName="Important Files" projectFiles="true">
+      <logicalFolder name="dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro" displayName="dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro" projectFiles="true">
+        <itemPath>dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro/mcc-config.mc4</itemPath>
+        <logicalFolder name="components" displayName="components" projectFiles="true">
+          <itemPath>dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro/components/cmsis.yml</itemPath>
+          <itemPath>dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro/components/core.yml</itemPath>
+          <itemPath>dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro/components/dfp.yml</itemPath>
+          <itemPath>dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro/components/dsu.yml</itemPath>
+          <itemPath>dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro/components/evsys.yml</itemPath>
+          <itemPath>dsu_crc32_generate_sam_d20_xpro_sam_d20_xpro/components/nvmctrl.yml</itemPath>
+        </logicalFolder>
+      </logicalFolder>
       <itemPath>Makefile</itemPath>
       <itemPath>../src/config/sam_d20_xpro/harmony-manifest-success.yml</itemPath>
-      <itemPath>dsu_crc32_generate_sam_d20_xpro.mc3</itemPath>
       <itemPath>../src/config/sam_d20_xpro/pin_configurations.csv</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript" displayName="Linker Files" projectFiles="true">
@@ -181,7 +191,7 @@
         <targetPluginBoard/>
         <platformTool>EdbgTool</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>4.45</languageToolchainVersion>
+        <languageToolchainVersion>4.60</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
