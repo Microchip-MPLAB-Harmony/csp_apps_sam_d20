@@ -85,7 +85,7 @@ static void DFLL_Initialize(void)
     {
         /* Waiting for DFLL to be ready */
     }
-    
+
 }
 
 
